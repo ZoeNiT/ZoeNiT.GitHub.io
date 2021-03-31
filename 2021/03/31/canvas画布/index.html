@@ -1,18 +1,18 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>canvas画布 | ZoeRyio</title><meta name="keywords" content="标签,HTML"><meta name="author" content="Zoe"><meta name="copyright" content="Zoe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="描述 HTML5        标签通过JS脚本语言绘制图像，其本身并没有绘制能力，仅仅作为一个图形容器。  getContext()方法可返回一个对象，该对象提供了用于画布上绘制的方法和属性。    canvas三要素    id：作为唯一标识，    width：画布内容宽度的像素大小，    height：画布内容高度的像素大小。    canvas基本演示以矩形为例： 1234567891">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>canvas画布 | ZoeRyio</title><meta name="keywords" content="标签,HTML"><meta name="author" content="Zoe"><meta name="copyright" content="Zoe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="canvas元素用于在网页上绘制图形。 什么是canvas?HTML5元素用于图形的绘制，通过脚本(通常是JavaScript)来完成. 标签只是图形容器，您必须使用脚本来绘制图形。 你可以通过多种方法使用canvas绘制路径,盒、圆、字符以及添加图像。 浏览器支持表格中的数字表示支持元素的第一个浏览器版本号。  创建一个画布（Canvas）一个画布在网页中是一个矩形框，通过元素来绘制. 注意:默">
 <meta property="og:type" content="article">
 <meta property="og:title" content="canvas画布">
 <meta property="og:url" content="https://zoenit.github.io.com/2021/03/31/canvas%E7%94%BB%E5%B8%83/index.html">
 <meta property="og:site_name" content="ZoeRyio">
-<meta property="og:description" content="描述 HTML5        标签通过JS脚本语言绘制图像，其本身并没有绘制能力，仅仅作为一个图形容器。  getContext()方法可返回一个对象，该对象提供了用于画布上绘制的方法和属性。    canvas三要素    id：作为唯一标识，    width：画布内容宽度的像素大小，    height：画布内容高度的像素大小。    canvas基本演示以矩形为例： 1234567891">
+<meta property="og:description" content="canvas元素用于在网页上绘制图形。 什么是canvas?HTML5元素用于图形的绘制，通过脚本(通常是JavaScript)来完成. 标签只是图形容器，您必须使用脚本来绘制图形。 你可以通过多种方法使用canvas绘制路径,盒、圆、字符以及添加图像。 浏览器支持表格中的数字表示支持元素的第一个浏览器版本号。  创建一个画布（Canvas）一个画布在网页中是一个矩形框，通过元素来绘制. 注意:默">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://zoenit.github.io.com/img/lifecycle.jpg">
+<meta property="og:image" content="https://zoenit.github.io.com/img/canvas.jpg">
 <meta property="article:published_time" content="2021-03-31T14:42:48.000Z">
-<meta property="article:modified_time" content="2021-03-31T16:07:08.054Z">
+<meta property="article:modified_time" content="2021-03-31T16:32:14.148Z">
 <meta property="article:author" content="Zoe">
 <meta property="article:tag" content="标签">
 <meta property="article:tag" content="HTML">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://zoenit.github.io.com/img/lifecycle.jpg"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://zoenit.github.io.com/2021/03/31/canvas%E7%94%BB%E5%B8%83/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="yandex-verification" content="{&quot;theme_color&quot;:{&quot;enable&quot;:true,&quot;main&quot;:&quot;#ff8c00&quot;,&quot;paginator&quot;:&quot;#00c4b6&quot;,&quot;button_hover&quot;:&quot;#FF7242&quot;,&quot;text_selection&quot;:&quot;#00c4b6&quot;,&quot;link_color&quot;:&quot;#99a9bf&quot;,&quot;meta_color&quot;:&quot;#858585&quot;,&quot;hr_color&quot;:&quot;#A4D8FA&quot;,&quot;code_foreground&quot;:&quot;#F47466&quot;,&quot;code_background&quot;:&quot;rgba(27, 31, 35, .05)&quot;,&quot;toc_color&quot;:&quot;#00c4b6&quot;,&quot;blockquote_padding_color&quot;:&quot;#49b1f5&quot;,&quot;blockquote_background_color&quot;:&quot;#ff8c00&quot;}}"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://zoenit.github.io.com/img/canvas.jpg"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://zoenit.github.io.com/2021/03/31/canvas%E7%94%BB%E5%B8%83/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="yandex-verification" content="{&quot;theme_color&quot;:{&quot;enable&quot;:true,&quot;main&quot;:&quot;#ff8c00&quot;,&quot;paginator&quot;:&quot;#00c4b6&quot;,&quot;button_hover&quot;:&quot;#FF7242&quot;,&quot;text_selection&quot;:&quot;#00c4b6&quot;,&quot;link_color&quot;:&quot;#99a9bf&quot;,&quot;meta_color&quot;:&quot;#858585&quot;,&quot;hr_color&quot;:&quot;#A4D8FA&quot;,&quot;code_foreground&quot;:&quot;#F47466&quot;,&quot;code_background&quot;:&quot;rgba(27, 31, 35, .05)&quot;,&quot;toc_color&quot;:&quot;#00c4b6&quot;,&quot;blockquote_padding_color&quot;:&quot;#49b1f5&quot;,&quot;blockquote_background_color&quot;:&quot;#ff8c00&quot;}}"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
@@ -58,7 +58,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2021-04-01 00:07:08'
+  postUpdate: '2021-04-01 00:32:14'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -140,357 +140,275 @@
           document.documentElement.classList.remove('hide-aside')
         }
       }
-    })(window)</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/macblack.css"><link rel="stylesheet" href="/css/cur.css"><meta name="generator" content="Hexo 5.4.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" data-lazy-src="/img/heard.gif" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 档案</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 影视推荐</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/lifecycle.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">ZoeRyio</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 档案</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 影视推荐</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">canvas画布</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-03-31T14:42:48.000Z" title="发表于 2021-03-31 22:42:48">2021-03-31</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-03-31T16:07:08.054Z" title="更新于 2021-04-01 00:07:08">2021-04-01</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/canvas/">canvas</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>3分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><ul>
-<li><p>HTML5    <canvas></canvas>    标签通过<strong>JS</strong>脚本语言绘制图像，其本身并没有绘制能力，仅仅作为一个图形容器。</p>
-</li>
-<li><p>getContext()方法可返回一个对象，该对象提供了用于画布上绘制的方法和属性。</p>
-</li>
-</ul>
-<blockquote>
-<p><strong>canvas三要素</strong></p>
-</blockquote>
-<ul>
-<li><ol>
-<li>id：作为唯一标识，</li>
-</ol>
-</li>
-<li><ol start="2">
-<li>width：画布内容宽度的像素大小，</li>
-</ol>
-</li>
-<li><ol start="3">
-<li>height：画布内容高度的像素大小。</li>
-</ol>
-</li>
-</ul>
-<h1 id="canvas基本演示"><a href="#canvas基本演示" class="headerlink" title="canvas基本演示"></a>canvas基本演示</h1><p>以矩形为例：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;canvas id=<span class="string">&quot;cav1&quot;</span> width=<span class="string">&quot;600&quot;</span> height=<span class="string">&quot;600&quot;</span>&gt;&lt;/canvas&gt;</span><br><span class="line">&lt;script type=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><br><span class="line">	<span class="comment">//找到cancas对象</span></span><br><span class="line">	<span class="keyword">var</span> cav = <span class="built_in">document</span>.getElementById(<span class="string">&#x27;cav1&#x27;</span>);</span><br><span class="line">	<span class="comment">//上下文对象（画笔）</span></span><br><span class="line">	<span class="keyword">var</span> ctx = cav.getContext(<span class="string">&#x27;2d&#x27;</span>)</span><br><span class="line">	<span class="comment">//绘制路径</span></span><br><span class="line">	ctx.rect(<span class="number">50</span>,<span class="number">50</span>,<span class="number">300</span>,<span class="number">300</span>)</span><br><span class="line">	<span class="comment">//填充样式</span></span><br><span class="line">	ctx.fillStyle = <span class="string">&#x27;aqua&#x27;</span></span><br><span class="line">	ctx.fill()</span><br><span class="line">	<span class="comment">//描边绘制路径</span></span><br><span class="line">	ctx.lineWidth = <span class="number">20</span></span><br><span class="line">	ctx.strokeStyle = <span class="string">&#x27;brown&#x27;</span></span><br><span class="line">	ctx.stroke()</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+    })(window)</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/macblack.css"><link rel="stylesheet" href="/css/cur.css"><meta name="generator" content="Hexo 5.4.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" data-lazy-src="/img/heard.gif" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 档案</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 影视推荐</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/canvas.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">ZoeRyio</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 档案</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 影视推荐</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">canvas画布</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-03-31T14:42:48.000Z" title="发表于 2021-03-31 22:42:48">2021-03-31</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-03-31T16:32:14.148Z" title="更新于 2021-04-01 00:32:14">2021-04-01</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/canvas/">canvas</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>9分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>canvas元素用于在网页上绘制图形。</p>
+<h2 id="什么是canvas"><a href="#什么是canvas" class="headerlink" title="什么是canvas?"></a>什么是canvas?</h2><p>HTML5<canvas>元素用于图形的绘制，通过脚本(通常是JavaScript)来完成.</p>
+<p><canvas>标签只是图形容器，您必须使用脚本来绘制图形。</p>
+<p>你可以通过多种方法使用canvas绘制路径,盒、圆、字符以及添加图像。</p>
+<h2 id="浏览器支持"><a href="#浏览器支持" class="headerlink" title="浏览器支持"></a>浏览器支持</h2><p>表格中的数字表示支持<canvas>元素的第一个浏览器版本号。</p>
+<p><img src= "/img/loading.gif" data-lazy-src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="浏览器支持"></p>
+<h2 id="创建一个画布（Canvas）"><a href="#创建一个画布（Canvas）" class="headerlink" title="创建一个画布（Canvas）"></a>创建一个画布（Canvas）</h2><p>一个画布在网页中是一个矩形框，通过<canvas>元素来绘制.</p>
+<p>注意:默认情况下<canvas>元素没有边框和内容。</p>
+<p><canvas>简单实例如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;canvas id&#x3D;&quot;myCanvas&quot; width&#x3D;&quot;200&quot; height&#x3D;&quot;100&quot;&gt;&lt;&#x2F;canvas&gt;</span><br></pre></td></tr></table></figure>
 
-<h2 id="颜色、样式和阴影"><a href="#颜色、样式和阴影" class="headerlink" title="颜色、样式和阴影"></a>颜色、样式和阴影</h2><table>
-<thead>
-<tr>
-<th align="left">属性</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-fillstyle.html">fillStyle</a></td>
-<td align="left">设置或返回用于填充绘画的颜色、渐变或模式。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-strokestyle.html">strokeStyle</a></td>
-<td align="left">设置或返回用于笔触的颜色、渐变或模式。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-shadowcolor.html">shadowColor</a></td>
-<td align="left">设置或返回用于阴影的颜色。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-shadowblur.html">shadowBlur</a></td>
-<td align="left">设置或返回用于阴影的模糊级别。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-shadowoffsetx.html">shadowOffsetX</a></td>
-<td align="left">设置或返回阴影与形状的水平距离。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-shadowoffsety.html">shadowOffsetY</a></td>
-<td align="left">设置或返回阴影与形状的垂直距离。</td>
-</tr>
-</tbody></table>
+<p>注意: 标签通常需要指定一个id属性 (脚本中经常引用), width 和 height 属性定义的画布的大小.</p>
+<p>提示:你可以在HTML页面中使用多个 <canvas> 元素.</p>
+<p>使用 style 属性来添加边框:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;canvas id&#x3D;&quot;myCanvas&quot; width&#x3D;&quot;200&quot; height&#x3D;&quot;100&quot;</span><br><span class="line">style&#x3D;&quot;border:1px solid #000000;&quot;&gt;</span><br><span class="line">&lt;&#x2F;canvas&gt;</span><br></pre></td></tr></table></figure>
+
+<p>效果展示：</p>
+<p><img src= "/img/loading.gif" data-lazy-src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="创建一个画布（Canvas）"></p>
+<h2 id="使用JavaScript来绘制图像"><a href="#使用JavaScript来绘制图像" class="headerlink" title="使用JavaScript来绘制图像"></a>使用JavaScript来绘制图像</h2><p>canvas元素本身是没有绘图能力的。所有的绘制工作必须在JavaScript内部完成：</p>
+<p>HTML代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;canvas id&#x3D;&quot;myCanvas&quot; width&#x3D;&quot;200&quot; height&#x3D;&quot;100&quot; style&#x3D;&quot;border:1px solid #c3c3c3;&quot;&gt;</span><br><span class="line">您的浏览器不支持 HTML5 canvas 标签。</span><br><span class="line">&lt;&#x2F;canvas&gt;</span><br></pre></td></tr></table></figure>
+
+<p>javascript代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var c&#x3D;document.getElementById(&quot;myCanvas&quot;);</span><br><span class="line">var ctx&#x3D;c.getContext(&quot;2d&quot;);</span><br><span class="line">ctx.fillStyle&#x3D;&quot;#FF0000&quot;;</span><br><span class="line">ctx.fillRect(0,0,150,75);</span><br></pre></td></tr></table></figure>
+
+<p>效果展示：</p>
+<p><img src= "/img/loading.gif" data-lazy-src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="使用JavaScript来绘制图像"></p>
+<p><strong>实例解析:</strong></p>
+<p>首先，找到 <canvas> 元素:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var c&#x3D;document.getElementById(&quot;myCanvas&quot;);</span><br></pre></td></tr></table></figure>
+
+<p>然后，创建 context 对象：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var ctx&#x3D;c.getContext(&quot;2d&quot;);</span><br></pre></td></tr></table></figure>
+
+<p>getContext(“2d”) 对象是内建的 HTML5 对象，拥有多种绘制路径、矩形、圆形、字符以及添加图像的方法。</p>
+<p>下面的两行代码绘制一个红色的矩形：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ctx.fillStyle&#x3D;&quot;#FF0000&quot;;</span><br><span class="line">ctx.fillRect(0,0,150,75);</span><br></pre></td></tr></table></figure>
+
+<p>设置fillStyle属性可以是CSS颜色，渐变，或图案。fillStyle 默认设置是#000000（黑色）。</p>
+<p>fillRect(x,y,width,height) 方法定义了矩形当前的填充方式。</p>
+<h2 id="Canvas-坐标"><a href="#Canvas-坐标" class="headerlink" title="Canvas 坐标"></a>Canvas 坐标</h2><p>canvas 是一个二维网格。</p>
+<p>canvas 的左上角坐标为 (0,0)</p>
+<p>上面的 fillRect 方法拥有参数 (0,0,150,75)。</p>
+<p>意思是：在画布上绘制 150×75 的矩形，从左上角开始 (0,0)。</p>
+<p>坐标实例</p>
+<p>如下图所示，画布的 X 和 Y 坐标用于在画布上对绘画进行定位。鼠标移动的矩形框上，显示定位坐标。</p>
+<p><img src= "/img/loading.gif" data-lazy-src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img"></p>
+<h2 id="Canvas-路径"><a href="#Canvas-路径" class="headerlink" title="Canvas 路径"></a>Canvas 路径</h2><p>在Canvas上画线，我们将使用以下两种方法：</p>
+<ul>
+<li>moveTo(x,y)定义线条开始坐标</li>
+<li>lineTo(x,y)定义线条结束坐标</li>
+</ul>
+<p>绘制线条我们必须使用到”ink”的方法，就像stroke().</p>
+<p><strong>举例：</strong></p>
+<p>定义开始坐标(0,0), 和结束坐标 (200,100)。然后使用 stroke() 方法来绘制线条:</p>
+<p>HTML代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;canvas id&#x3D;&quot;myCanvas&quot; width&#x3D;&quot;200&quot; height&#x3D;&quot;100&quot; style&#x3D;&quot;border:1px solid #d3d3d3;&quot;&gt;</span><br><span class="line">您的浏览器不支持 HTML5 canvas 标签。&lt;&#x2F;canvas&gt;</span><br></pre></td></tr></table></figure>
+
+<p>javascript代码:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var c&#x3D;document.getElementById(&quot;myCanvas&quot;);</span><br><span class="line">var ctx&#x3D;c.getContext(&quot;2d&quot;);</span><br><span class="line">ctx.moveTo(0,0);</span><br><span class="line">ctx.lineTo(200,100);</span><br><span class="line">ctx.stroke();</span><br></pre></td></tr></table></figure>
+
+<p>效果展示：</p>
+<p><img src= "/img/loading.gif" data-lazy-src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="在Canvas上画线"></p>
+<p>在canvas中绘制圆形, 我们将使用以下javascript方法:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">context.arc(&lt;i&gt;x&lt;&#x2F;i&gt;,&lt;i&gt;y&lt;&#x2F;i&gt;,&lt;i&gt;r&lt;&#x2F;i&gt;,&lt;i&gt;sAngle&lt;&#x2F;i&gt;,&lt;i&gt;eAngle&lt;&#x2F;i&gt;,&lt;i&gt;counterclockwise&lt;&#x2F;i&gt;);</span><br></pre></td></tr></table></figure>
+
+<p><strong>参数值</strong></p>
 <table>
 <thead>
 <tr>
-<th align="left">方法</th>
+<th align="left">参数</th>
 <th align="left">描述</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-createlineargradient.html">createLinearGradient()</a></td>
-<td align="left">创建线性渐变（用在画布内容上）。</td>
+<td align="left"><em>x</em></td>
+<td align="left">圆的中心的 x 坐标。</td>
 </tr>
 <tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-createpattern.html">createPattern()</a></td>
-<td align="left">在指定的方向上重复指定的元素。</td>
+<td align="left"><em>y</em></td>
+<td align="left">圆的中心的 y 坐标。</td>
 </tr>
 <tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-createradialgradient.html">createRadialGradient()</a></td>
-<td align="left">创建放射状/环形的渐变（用在画布内容上）。</td>
+<td align="left"><em>r</em></td>
+<td align="left">圆的半径。</td>
 </tr>
 <tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-addcolorstop.html">addColorStop()</a></td>
-<td align="left">规定渐变对象中的颜色和停止位置。</td>
+<td align="left"><em>sAngle</em></td>
+<td align="left">起始角，以弧度计。（弧的圆形的三点钟位置是 0 度）。</td>
+</tr>
+<tr>
+<td align="left"><em>eAngle</em></td>
+<td align="left">结束角，以弧度计。</td>
+</tr>
+<tr>
+<td align="left"><em>counterclockwise</em></td>
+<td align="left">可选。规定应该逆时针还是顺时针绘图。False = 顺时针，true = 逆时针。</td>
 </tr>
 </tbody></table>
-<h2 id="线条样式"><a href="#线条样式" class="headerlink" title="线条样式"></a>线条样式</h2><table>
-<thead>
-<tr>
-<th align="left">属性</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-linecap.html">lineCap</a></td>
-<td align="left">设置或返回线条的结束端点样式。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-linejoin.html">lineJoin</a></td>
-<td align="left">设置或返回两条线相交时，所创建的拐角类型。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-linewidth.html">lineWidth</a></td>
-<td align="left">设置或返回当前的线条宽度。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-miterlimit.html">miterLimit</a></td>
-<td align="left">设置或返回最大斜接长度。</td>
-</tr>
-</tbody></table>
-<h2 id="矩形"><a href="#矩形" class="headerlink" title="矩形"></a>矩形</h2><table>
-<thead>
-<tr>
-<th align="left">方法</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-rect.html">rect()</a></td>
-<td align="left">创建矩形。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-fillrect.html">fillRect()</a></td>
-<td align="left">绘制”被填充”的矩形。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-strokerect.html">strokeRect()</a></td>
-<td align="left">绘制矩形（无填充）。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-clearrect.html">clearRect()</a></td>
-<td align="left">在给定的矩形内清除指定的像素。</td>
-</tr>
-</tbody></table>
-<h2 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h2><table>
-<thead>
-<tr>
-<th align="left">方法</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-fill.html">fill()</a></td>
-<td align="left">填充当前绘图（路径）。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-stroke.html">stroke()</a></td>
-<td align="left">绘制已定义的路径。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-beginpath.html">beginPath()</a></td>
-<td align="left">起始一条路径，或重置当前路径。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-moveto.html">moveTo()</a></td>
-<td align="left">把路径移动到画布中的指定点，不创建线条。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-closepath.html">closePath()</a></td>
-<td align="left">创建从当前点回到起始点的路径。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-lineto.html">lineTo()</a></td>
-<td align="left">添加一个新点，然后在画布中创建从该点到最后指定点的线条。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-clip.html">clip()</a></td>
-<td align="left">从原始画布剪切任意形状和尺寸的区域。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-quadraticcurveto.html">quadraticCurveTo()</a></td>
-<td align="left">创建二次贝塞尔曲线。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-beziercurveto.html">bezierCurveTo()</a></td>
-<td align="left">创建三次贝塞尔曲线。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-arc.html">arc()</a></td>
-<td align="left">创建弧/曲线（用于创建圆形或部分圆）。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-arcto.html">arcTo()</a></td>
-<td align="left">创建两切线之间的弧/曲线。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-ispointinpath.html">isPointInPath()</a></td>
-<td align="left">如果指定的点位于当前路径中，则返回 true，否则返回 false。</td>
-</tr>
-</tbody></table>
-<h2 id="转换"><a href="#转换" class="headerlink" title="转换"></a>转换</h2><table>
-<thead>
-<tr>
-<th align="left">方法</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-scale.html">scale()</a></td>
-<td align="left">缩放当前绘图至更大或更小。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-rotate.html">rotate()</a></td>
-<td align="left">旋转当前绘图。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-translate.html">translate()</a></td>
-<td align="left">重新映射画布上的 (0,0) 位置。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-transform.html">transform()</a></td>
-<td align="left">替换绘图的当前转换矩阵。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-settransform.html">setTransform()</a></td>
-<td align="left">将当前转换重置为单位矩阵。然后运行 transform()。</td>
-</tr>
-</tbody></table>
-<h2 id="文本"><a href="#文本" class="headerlink" title="文本"></a>文本</h2><table>
-<thead>
-<tr>
-<th align="left">属性</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-font.html">font</a></td>
-<td align="left">设置或返回文本内容的当前字体属性。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-textalign.html">textAlign</a></td>
-<td align="left">设置或返回文本内容的当前对齐方式。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-textbaseline.html">textBaseline</a></td>
-<td align="left">设置或返回在绘制文本时使用的当前文本基线。</td>
-</tr>
-</tbody></table>
+<p><strong>定义和用法</strong></p>
+<p>arc()方法创建弧/曲线（用于创建圆或部分圆）。</p>
+<p>提示：如需通过arc()来创建圆，请把起始角设置为0，结束角设置为2*Math.PI。</p>
+<p>提示：请使用stroke()或fill()方法在画布上绘制实际的弧。</p>
+<p><img src= "/img/loading.gif" data-lazy-src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="arc()方法创建弧/曲线"></p>
+<ul>
+<li>中心：arc(100,75,50,0<em>Math.PI,1.5</em>Math.PI)</li>
+<li>起始角：arc(100,75,50,0,1.5*Math.PI)</li>
+<li>结束角：arc(100,75,50,0<em>Math.PI,1.5</em>Math.PI)</li>
+</ul>
+<p>实际上我们在绘制圆形时使用了 “ink” 的方法, 比如 stroke() 或者 fill().</p>
+<p><strong>实例</strong></p>
+<p>使用arc()方法绘制一个圆:</p>
+<p>HTML代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;canvas id&#x3D;&quot;myCanvas&quot; width&#x3D;&quot;200&quot; height&#x3D;&quot;100&quot; style&#x3D;&quot;border:1px solid #d3d3d3;&quot;&gt;</span><br><span class="line">您的浏览器不支持 HTML5 canvas 标签。&lt;&#x2F;canvas&gt;</span><br></pre></td></tr></table></figure>
+
+<p>javascript代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var c&#x3D;document.getElementById(&quot;myCanvas&quot;);</span><br><span class="line">var ctx&#x3D;c.getContext(&quot;2d&quot;);</span><br><span class="line">ctx.beginPath();</span><br><span class="line">ctx.arc(95,50,40,0,2*Math.PI);</span><br><span class="line">ctx.stroke();</span><br></pre></td></tr></table></figure>
+
+<p>效果展示：</p>
+<p><img src= "/img/loading.gif" data-lazy-src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="使用arc()方法绘制一个圆:"></p>
+<h2 id="Canvas-文本"><a href="#Canvas-文本" class="headerlink" title="Canvas-文本"></a>Canvas-文本</h2><p>使用canvas绘制文本，重要的属性和方法如下：</p>
+<p>font-定义字体</p>
+<p>fillText(<em>text,x,y,maxWidth</em>)-在canvas上绘制实心的文本</p>
+<p>strokeText(<em>text,x,y,maxWidth</em>)-在canvas上绘制空心的文本</p>
+<p><strong>参数值</strong></p>
 <table>
 <thead>
 <tr>
-<th align="left">方法</th>
+<th align="left">参数</th>
 <th align="left">描述</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-filltext.html">fillText()</a></td>
-<td align="left">在画布上绘制”被填充的”文本。</td>
+<td align="left"><em>text</em></td>
+<td align="left">规定在画布上输出的文本。</td>
 </tr>
 <tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-stroketext.html">strokeText()</a></td>
-<td align="left">在画布上绘制文本（无填充）。</td>
+<td align="left"><em>x</em></td>
+<td align="left">开始绘制文本的 x 坐标位置（相对于画布）。</td>
 </tr>
 <tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-measuretext.html">measureText()</a></td>
-<td align="left">返回包含指定文本宽度的对象。</td>
+<td align="left"><em>y</em></td>
+<td align="left">开始绘制文本的 y 坐标位置（相对于画布）。</td>
+</tr>
+<tr>
+<td align="left"><em>maxWidth</em></td>
+<td align="left">可选。允许的最大文本宽度，以像素计。</td>
 </tr>
 </tbody></table>
-<h2 id="图像绘制"><a href="#图像绘制" class="headerlink" title="图像绘制"></a>图像绘制</h2><table>
-<thead>
-<tr>
-<th align="left">方法</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-drawimage.html">drawImage()</a></td>
-<td align="left">向画布上绘制图像、画布或视频。</td>
-</tr>
-</tbody></table>
-<h2 id="像素操作"><a href="#像素操作" class="headerlink" title="像素操作"></a>像素操作</h2><table>
-<thead>
-<tr>
-<th align="left">属性</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-imagedata-width.html">width</a></td>
-<td align="left">返回 ImageData 对象的宽度。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-imagedata-height.html">height</a></td>
-<td align="left">返回 ImageData 对象的高度。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-imagedata-data.html">data</a></td>
-<td align="left">返回一个对象，其包含指定的 ImageData 对象的图像数据。</td>
-</tr>
-</tbody></table>
+<p><strong>使用fillText():</strong></p>
+<p>实例</p>
+<p>使用”Arial”字体在画布上绘制一个高30px的文字（实心）：</p>
+<p>HTML代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;canvas id&#x3D;&quot;myCanvas&quot; width&#x3D;&quot;200&quot; height&#x3D;&quot;100&quot; style&#x3D;&quot;border:1px solid #d3d3d3;&quot;&gt;</span><br><span class="line">您的浏览器不支持 HTML5 canvas 标签。&lt;&#x2F;canvas&gt;</span><br></pre></td></tr></table></figure>
+
+<p>javascript代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var c&#x3D;document.getElementById(&quot;myCanvas&quot;);</span><br><span class="line">var ctx&#x3D;c.getContext(&quot;2d&quot;);</span><br><span class="line">ctx.font&#x3D;&quot;30px Arial&quot;;</span><br><span class="line">ctx.fillText(&quot;Hello World&quot;,10,50);</span><br></pre></td></tr></table></figure>
+
+<p>效果展示：</p>
+<p><img src= "/img/loading.gif" data-lazy-src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="使用&quot;Arial&quot;字体在画布上绘制一个高30px的文字（实心）"></p>
+<p><strong>使用strokeText():</strong></p>
+<p>实例</p>
+<p>使用”Arial”字体在画布上绘制一个高30px的文字（空心）：</p>
+<p>HTML代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;canvas id&#x3D;&quot;myCanvas&quot; width&#x3D;&quot;200&quot; height&#x3D;&quot;100&quot; style&#x3D;&quot;border:1px solid #d3d3d3;&quot;&gt;</span><br><span class="line">您的浏览器不支持 HTML5 canvas 标签。&lt;&#x2F;canvas&gt;</span><br></pre></td></tr></table></figure>
+
+<p>javascript代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var c&#x3D;document.getElementById(&quot;myCanvas&quot;);</span><br><span class="line">var ctx&#x3D;c.getContext(&quot;2d&quot;);</span><br><span class="line">ctx.font&#x3D;&quot;30px Arial&quot;;</span><br><span class="line">ctx.strokeText(&quot;Hello World&quot;,10,50);</span><br></pre></td></tr></table></figure>
+
+<p>效果展示：</p>
+<p><img src= "/img/loading.gif" data-lazy-src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="使用 &quot;Arial&quot; 字体在画布上绘制一个高 30px 的文字（空心）"></p>
+<h2 id="Canvas-渐变"><a href="#Canvas-渐变" class="headerlink" title="Canvas-渐变"></a>Canvas-渐变</h2><p>渐变可以填充在矩形,圆形,线条,文本等等,各种形状可以自己定义不同的颜色。</p>
+<p>以下有两种不同的方式来设置Canvas渐变：</p>
+<p>createLinearGradient()方法创建线性的渐变对象。</p>
+<p>提示：请使用 addColorStop() 方法规定不同的颜色，以及在 gradient 对象中的何处定位颜色。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">addColorStop()方法规定渐变对象中的颜色和位置。</span><br><span class="line"></span><br><span class="line">addColorStop()方法与createLinearGradient()或createRadialGradient()一起使用。</span><br><span class="line"></span><br><span class="line">注意：您可以多次调用addColorStop()方法来改变渐变。如果您不对渐变对象使用该方法，那么渐变将不可见。为了获得可见的渐变，您需要创建至少一个色标。</span><br><span class="line"></span><br><span class="line">JavaScript语法：gradient.addColorStop(stop,color);</span><br><span class="line"></span><br><span class="line">stop 介于0.0与1.0之间的值，表示渐变中开始与结束之间的位置。</span><br><span class="line"></span><br><span class="line">color 在stop位置显示的CSS颜色值。</span><br></pre></td></tr></table></figure>
+
+<p>javascript语法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">createLinearGradient(x,y,x1,y1)</span><br></pre></td></tr></table></figure>
+
+<p><strong>参数值</strong></p>
 <table>
 <thead>
 <tr>
-<th align="left">方法</th>
+<th align="left">参数</th>
 <th align="left">描述</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-createimagedata.html">createImageData()</a></td>
-<td align="left">创建新的、空白的 ImageData 对象。</td>
+<td align="left"><em>x</em></td>
+<td align="left">渐变开始点的 x 坐标</td>
 </tr>
 <tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-getimagedata.html">getImageData()</a></td>
-<td align="left">返回 ImageData 对象，该对象为画布上指定的矩形复制像素数据。</td>
+<td align="left"><em>y</em></td>
+<td align="left">渐变开始点的 y 坐标</td>
 </tr>
 <tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-putimagedata.html">putImageData()</a></td>
-<td align="left">把图像数据（从指定的 ImageData 对象）放回画布上。</td>
+<td align="left"><em>x1</em></td>
+<td align="left">渐变结束点的 x 坐标</td>
+</tr>
+<tr>
+<td align="left"><em>y1</em></td>
+<td align="left">渐变结束点的 y 坐标</td>
 </tr>
 </tbody></table>
-<h2 id="合成"><a href="#合成" class="headerlink" title="合成"></a>合成</h2><table>
+<p>createLinearGradient() 方法创建放射状/圆形渐变对象。</p>
+<p>JavaScript 语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">createRadialGradient(x0,y0,r0,x1,y1,r1);</span><br></pre></td></tr></table></figure>
+
+<p><strong>参数值</strong></p>
+<table>
 <thead>
 <tr>
-<th align="left">属性</th>
+<th align="left">参数</th>
 <th align="left">描述</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-globalalpha.html">globalAlpha</a></td>
-<td align="left">设置或返回绘图的当前 alpha 或透明值。</td>
+<td align="left"><em>x0</em></td>
+<td align="left">渐变的开始圆的 x 坐标</td>
 </tr>
 <tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/canvas-globalcompositeoperation.html">globalCompositeOperation</a></td>
-<td align="left">设置或返回新图像如何绘制到已有的图像上。</td>
+<td align="left"><em>y0</em></td>
+<td align="left">渐变的开始圆的 y 坐标</td>
+</tr>
+<tr>
+<td align="left"><em>r0</em></td>
+<td align="left">开始圆的半径</td>
+</tr>
+<tr>
+<td align="left"><em>x1</em></td>
+<td align="left">渐变的结束圆的 x 坐标</td>
+</tr>
+<tr>
+<td align="left"><em>y1</em></td>
+<td align="left">渐变的结束圆的 y 坐标</td>
+</tr>
+<tr>
+<td align="left"><em>r1</em></td>
+<td align="left">结束圆的半径</td>
 </tr>
 </tbody></table>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><table>
-<thead>
-<tr>
-<th align="left">方法</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">save()</td>
-<td align="left">保存当前环境的状态。</td>
-</tr>
-<tr>
-<td align="left">restore()</td>
-<td align="left">返回之前保存过的路径状态和属性。</td>
-</tr>
-<tr>
-<td align="left">createEvent()</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">getContext()</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">toDataURL()</td>
-<td align="left"></td>
-</tr>
-</tbody></table>
-</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%A0%87%E7%AD%BE/">标签</a><a class="post-meta__tags" href="/tags/HTML/">HTML</a></div><div class="post_share"><div class="social-share" data-image="/img/lifecycle.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2021/03/29/Vue%E4%B8%ADcomputed%E5%92%8Cwatch/"><img class="next-cover" data-lazy-src="/img/CalMonitor.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Vue中computed和watch的用法和区别</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="/img/heard.gif" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Zoe</div><div class="author-info__description">如果有个地方可以存放你的所有个人信息（一份个性化、一份专业化），不再需要填写这样那样的网站资料，该是多么美好的事。</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/ZoeNiT"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/ZoeNiT" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:ZoeRyio@vip.sina.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">我年轻，需要你指点，我会虚心接受并且改正，但绝不需要你指指点点。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%8F%8F%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">描述</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#canvas%E5%9F%BA%E6%9C%AC%E6%BC%94%E7%A4%BA"><span class="toc-number">2.</span> <span class="toc-text">canvas基本演示</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A2%9C%E8%89%B2%E3%80%81%E6%A0%B7%E5%BC%8F%E5%92%8C%E9%98%B4%E5%BD%B1"><span class="toc-number">2.1.</span> <span class="toc-text">颜色、样式和阴影</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E6%9D%A1%E6%A0%B7%E5%BC%8F"><span class="toc-number">2.2.</span> <span class="toc-text">线条样式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9F%A9%E5%BD%A2"><span class="toc-number">2.3.</span> <span class="toc-text">矩形</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B7%AF%E5%BE%84"><span class="toc-number">2.4.</span> <span class="toc-text">路径</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%AC%E6%8D%A2"><span class="toc-number">2.5.</span> <span class="toc-text">转换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E6%9C%AC"><span class="toc-number">2.6.</span> <span class="toc-text">文本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%BE%E5%83%8F%E7%BB%98%E5%88%B6"><span class="toc-number">2.7.</span> <span class="toc-text">图像绘制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%83%8F%E7%B4%A0%E6%93%8D%E4%BD%9C"><span class="toc-number">2.8.</span> <span class="toc-text">像素操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%88%E6%88%90"><span class="toc-number">2.9.</span> <span class="toc-text">合成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-number">2.10.</span> <span class="toc-text">其他</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/03/31/canvas%E7%94%BB%E5%B8%83/" title="canvas画布"><img data-lazy-src="/img/lifecycle.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="canvas画布"/></a><div class="content"><a class="title" href="/2021/03/31/canvas%E7%94%BB%E5%B8%83/" title="canvas画布">canvas画布</a><time datetime="2021-03-31T14:42:48.000Z" title="发表于 2021-03-31 22:42:48">2021-03-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/03/29/Vue%E4%B8%ADcomputed%E5%92%8Cwatch/" title="Vue中computed和watch的用法和区别"><img data-lazy-src="/img/CalMonitor.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vue中computed和watch的用法和区别"/></a><div class="content"><a class="title" href="/2021/03/29/Vue%E4%B8%ADcomputed%E5%92%8Cwatch/" title="Vue中computed和watch的用法和区别">Vue中computed和watch的用法和区别</a><time datetime="2021-03-29T00:45:39.000Z" title="发表于 2021-03-29 08:45:39">2021-03-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/03/24/Vue%E4%B8%8EReact%E7%BB%84%E4%BB%B6%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90/" title="Vue与React的生命周期钩子"><img data-lazy-src="/img/lifecycle.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vue与React的生命周期钩子"/></a><div class="content"><a class="title" href="/2021/03/24/Vue%E4%B8%8EReact%E7%BB%84%E4%BB%B6%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90/" title="Vue与React的生命周期钩子">Vue与React的生命周期钩子</a><time datetime="2021-03-23T19:21:55.000Z" title="发表于 2021-03-24 03:21:55">2021-03-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/03/21/axios%E8%AF%B7%E6%B1%82/" title="axios请求与接收"><img data-lazy-src="/img/axios.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="axios请求与接收"/></a><div class="content"><a class="title" href="/2021/03/21/axios%E8%AF%B7%E6%B1%82/" title="axios请求与接收">axios请求与接收</a><time datetime="2021-03-21T14:35:18.000Z" title="发表于 2021-03-21 22:35:18">2021-03-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/03/18/React%E7%9A%84PubSub%E6%9C%BA%E5%88%B6/" title="React的PubSub机制"><img data-lazy-src="/img/PubSub.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="React的PubSub机制"/></a><div class="content"><a class="title" href="/2021/03/18/React%E7%9A%84PubSub%E6%9C%BA%E5%88%B6/" title="React的PubSub机制">React的PubSub机制</a><time datetime="2021-03-18T10:07:50.000Z" title="发表于 2021-03-18 18:07:50">2021-03-18</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/lifecycle.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By Zoe</div><div class="footer_custom_text">Walk by faith, nt by sight.往前走，凭着信心，而不是眼睛。</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+<p>实例</p>
+<p>使用createLinearGradient()创建一个线性渐变。使用渐变填充矩形:</p>
+<p>javascript代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">var c&#x3D;document.getElementById(&quot;myCanvas&quot;);</span><br><span class="line">var ctx&#x3D;c.getContext(&quot;2d&quot;);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; Create gradient</span><br><span class="line">var grd&#x3D;ctx.createLinearGradient(0,0,200,0);</span><br><span class="line">grd.addColorStop(0,&quot;red&quot;);</span><br><span class="line">grd.addColorStop(1,&quot;white&quot;);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; Fill with gradient</span><br><span class="line">ctx.fillStyle&#x3D;grd;</span><br><span class="line">ctx.fillRect(10,10,150,80);</span><br></pre></td></tr></table></figure>
+
+<p>效果展示：</p>
+<p><img src= "/img/loading.gif" data-lazy-src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="使用createLinearGradient()创建一个线性渐变"></p>
+<p>实例</p>
+<p>使用createRadialGradient()创建一个径向/圆渐变。使用渐变填充矩形：</p>
+<p>javascript代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">var c&#x3D;document.getElementById(&quot;myCanvas&quot;);</span><br><span class="line">var ctx&#x3D;c.getContext(&quot;2d&quot;);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; Create gradient</span><br><span class="line">var grd&#x3D;ctx.createRadialGradient(75,50,5,90,60,100);</span><br><span class="line">grd.addColorStop(0,&quot;red&quot;);</span><br><span class="line">grd.addColorStop(1,&quot;white&quot;);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; Fill with gradient</span><br><span class="line">ctx.fillStyle&#x3D;grd;</span><br><span class="line">ctx.fillRect(10,10,150,80);</span><br></pre></td></tr></table></figure>
+
+<p>效果展示：</p>
+<p><img src= "/img/loading.gif" data-lazy-src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="使用createRadialGradient()创建一个径向/圆渐变"></p>
+<h2 id="Canvas-图像"><a href="#Canvas-图像" class="headerlink" title="Canvas 图像"></a>Canvas 图像</h2><p>把一幅图像放置到画布上, 使用以下方法:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">drawImage(image,x,y)</span><br></pre></td></tr></table></figure>
+
+<p>HTML代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Image to use:&lt;&#x2F;p&gt;</span><br><span class="line">&lt;img id&#x3D;&quot;scream&quot; src&#x3D;&quot;img_the_scream.jpg&quot; alt&#x3D;&quot;The Scream&quot; width&#x3D;&quot;220&quot; height&#x3D;&quot;277&quot;&gt;</span><br><span class="line">&lt;p&gt;Canvas:&lt;&#x2F;p&gt;</span><br><span class="line">&lt;canvas id&#x3D;&quot;myCanvas&quot; width&#x3D;&quot;250&quot; height&#x3D;&quot;300&quot; style&#x3D;&quot;border:1px solid #d3d3d3;&quot;&gt;</span><br><span class="line">您的浏览器不支持 HTML5 canvas 标签。</span><br><span class="line">&lt;&#x2F;canvas&gt;</span><br></pre></td></tr></table></figure>
+
+<p>javascript代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var c&#x3D;document.getElementById(&quot;myCanvas&quot;);</span><br><span class="line">var ctx&#x3D;c.getContext(&quot;2d&quot;);</span><br><span class="line">var img&#x3D;document.getElementById(&quot;scream&quot;);</span><br><span class="line"></span><br><span class="line">img.onload &#x3D; function() &#123;</span><br><span class="line">    ctx.drawImage(img,10,10);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>效果展示：</p>
+<p><img src= "/img/loading.gif" data-lazy-src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="drawImage把一幅图像放置到画布上"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="drawImage把一幅图像放置到画布上"></p>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%A0%87%E7%AD%BE/">标签</a><a class="post-meta__tags" href="/tags/HTML/">HTML</a></div><div class="post_share"><div class="social-share" data-image="/img/canvas.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2021/03/29/Vue%E4%B8%ADcomputed%E5%92%8Cwatch/"><img class="next-cover" data-lazy-src="/img/CalMonitor.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Vue中computed和watch的用法和区别</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="/img/heard.gif" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Zoe</div><div class="author-info__description">如果有个地方可以存放你的所有个人信息（一份个性化、一份专业化），不再需要填写这样那样的网站资料，该是多么美好的事。</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/ZoeNiT"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/ZoeNiT" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:ZoeRyio@vip.sina.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">我年轻，需要你指点，我会虚心接受并且改正，但绝不需要你指指点点。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFcanvas"><span class="toc-number">1.</span> <span class="toc-text">什么是canvas?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E6%94%AF%E6%8C%81"><span class="toc-number">2.</span> <span class="toc-text">浏览器支持</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%94%BB%E5%B8%83%EF%BC%88Canvas%EF%BC%89"><span class="toc-number">3.</span> <span class="toc-text">创建一个画布（Canvas）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8JavaScript%E6%9D%A5%E7%BB%98%E5%88%B6%E5%9B%BE%E5%83%8F"><span class="toc-number">4.</span> <span class="toc-text">使用JavaScript来绘制图像</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Canvas-%E5%9D%90%E6%A0%87"><span class="toc-number">5.</span> <span class="toc-text">Canvas 坐标</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Canvas-%E8%B7%AF%E5%BE%84"><span class="toc-number">6.</span> <span class="toc-text">Canvas 路径</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Canvas-%E6%96%87%E6%9C%AC"><span class="toc-number">7.</span> <span class="toc-text">Canvas-文本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Canvas-%E6%B8%90%E5%8F%98"><span class="toc-number">8.</span> <span class="toc-text">Canvas-渐变</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Canvas-%E5%9B%BE%E5%83%8F"><span class="toc-number">9.</span> <span class="toc-text">Canvas 图像</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/03/31/canvas%E7%94%BB%E5%B8%83/" title="canvas画布"><img data-lazy-src="/img/canvas.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="canvas画布"/></a><div class="content"><a class="title" href="/2021/03/31/canvas%E7%94%BB%E5%B8%83/" title="canvas画布">canvas画布</a><time datetime="2021-03-31T14:42:48.000Z" title="发表于 2021-03-31 22:42:48">2021-03-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/03/29/Vue%E4%B8%ADcomputed%E5%92%8Cwatch/" title="Vue中computed和watch的用法和区别"><img data-lazy-src="/img/CalMonitor.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vue中computed和watch的用法和区别"/></a><div class="content"><a class="title" href="/2021/03/29/Vue%E4%B8%ADcomputed%E5%92%8Cwatch/" title="Vue中computed和watch的用法和区别">Vue中computed和watch的用法和区别</a><time datetime="2021-03-29T00:45:39.000Z" title="发表于 2021-03-29 08:45:39">2021-03-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/03/24/Vue%E4%B8%8EReact%E7%BB%84%E4%BB%B6%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90/" title="Vue与React的生命周期钩子"><img data-lazy-src="/img/lifecycle.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vue与React的生命周期钩子"/></a><div class="content"><a class="title" href="/2021/03/24/Vue%E4%B8%8EReact%E7%BB%84%E4%BB%B6%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90/" title="Vue与React的生命周期钩子">Vue与React的生命周期钩子</a><time datetime="2021-03-23T19:21:55.000Z" title="发表于 2021-03-24 03:21:55">2021-03-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/03/21/axios%E8%AF%B7%E6%B1%82/" title="axios请求与接收"><img data-lazy-src="/img/axios.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="axios请求与接收"/></a><div class="content"><a class="title" href="/2021/03/21/axios%E8%AF%B7%E6%B1%82/" title="axios请求与接收">axios请求与接收</a><time datetime="2021-03-21T14:35:18.000Z" title="发表于 2021-03-21 22:35:18">2021-03-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/03/18/React%E7%9A%84PubSub%E6%9C%BA%E5%88%B6/" title="React的PubSub机制"><img data-lazy-src="/img/PubSub.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="React的PubSub机制"/></a><div class="content"><a class="title" href="/2021/03/18/React%E7%9A%84PubSub%E6%9C%BA%E5%88%B6/" title="React的PubSub机制">React的PubSub机制</a><time datetime="2021-03-18T10:07:50.000Z" title="发表于 2021-03-18 18:07:50">2021-03-18</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/canvas.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By Zoe</div><div class="footer_custom_text">Walk by faith, nt by sight.往前走，凭着信心，而不是眼睛。</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
   endLoading: () => {
     document.body.style.overflow = 'auto';
     document.getElementById('loading-box').classList.add("loaded")
