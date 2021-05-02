@@ -13,7 +13,7 @@
       
       <categories>
           
-          <category> javascript </category>
+          <category> 框架 </category>
           
       </categories>
       
@@ -21,8 +21,6 @@
         <tags>
             
             <tag> Vue </tag>
-            
-            <tag> props </tag>
             
         </tags>
       
@@ -154,8 +152,6 @@
         <tags>
             
             <tag> Vue </tag>
-            
-            <tag> 框架 </tag>
             
         </tags>
       
